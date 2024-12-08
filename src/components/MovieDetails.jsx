@@ -5,7 +5,7 @@ function MovieDetails({ selectedMovie, setSelectedMovie }) {
 
   useEffect(() => {
     const fetchMovieDetails = async () => {
-      const url = `http://www.omdbapi.com/?i=${selectedMovie.imdbID}&apikey=f22172dd`;
+      const url = `https://www.omdbapi.com/?i=${selectedMovie.imdbID}&apikey=f22172dd`;
       const response = await fetch(url);
       const data = await response.json();
       setMovieDetails(data);
